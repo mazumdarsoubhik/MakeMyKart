@@ -1,0 +1,13 @@
+I want to build an web application which is mobile responsive. The app is online cart for offline shops which means customer who come to the super market can add items into their virtual cart in web app and finally choose to self-checkout from store or delivery to their home.
+The features are given below:
+1. Search for items 
+2. Option to add into cart for searched 
+3. Show cart
+4. Checkout
+
+I want to use Flask as sole web framework. Use render template function of flask to render HTML pages. Use Bootstrap to style CSS. Feel free to use Crayons if needed.
+
+
+------------------------
+
+I would like to build a shopping web app using Flask and bootstrap. The app should have search feature, add feature and view cart. Feel free to use crayons if needed.

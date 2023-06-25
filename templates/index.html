@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Bringing AI into your cart | makemyKart</title>
+</head>
+
+<body>
+    <!-- Check Symbol -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+            <title>Check</title>
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+            </path>
+        </symbol>
+    </svg>
+
+    <header class="sticky-header">
+        <h1 class="header-text">
+            <a class="navbar-brand fw-bold" href="#home" id="header-img">
+                <!-- <span class="black-text join-text">makemy</span>
+                <span class="green-text join-text">kart</span> -->
+                <span class="black-text join-text">Test</span>
+                <span class="green-text join-text">ing</span>
+            </a>
+        </h1>
+      </header>
+
+    <!-- Home -->
+    <div class="container search-container" id="home">
+            <!------------------------------------------------ Search Box ------------------------------------------------>
+            <div class="row search-box m-4 p-2" id="form">
+                <!-- Email Input -->
+                <div class="col">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2746 9.39528C11.1219 8.19494 11.5013 6.70673 11.3371 5.22837C11.1729 3.75002 10.4771 2.39056 9.38898 1.42197C8.30083 0.453377 6.90056 -0.0529161 5.46831 0.00438242C4.03607 0.061681 2.67747 0.678345 1.66433 1.731C0.651194 2.78366 0.0582276 4.19468 0.00406556 5.68177C-0.0500965 7.16885 0.43854 8.62234 1.37222 9.75143C2.30589 10.8805 3.61575 11.602 5.03974 11.7714C6.46372 11.9408 7.89682 11.5458 9.05232 10.6653H9.05145C9.07769 10.7016 9.10569 10.7361 9.13719 10.7698L12.5058 14.2673C12.6699 14.4377 12.8924 14.5335 13.1245 14.5336C13.3566 14.5337 13.5793 14.4381 13.7435 14.2677C13.9076 14.0974 13.9999 13.8663 14 13.6253C14.0001 13.3843 13.908 13.1532 13.7439 12.9827L10.3753 9.48522C10.344 9.45234 10.3104 9.42288 10.2746 9.39528ZM10.5004 5.90321C10.5004 6.55936 10.3759 7.20908 10.1341 7.81527C9.89223 8.42147 9.53776 8.97228 9.0909 9.43624C8.64403 9.9002 8.11352 10.2682 7.52967 10.5193C6.94581 10.7704 6.32003 10.8997 5.68807 10.8997C5.05611 10.8997 4.43033 10.7704 3.84648 10.5193C3.26262 10.2682 2.73211 9.9002 2.28525 9.43624C1.83838 8.97228 1.48391 8.42147 1.24207 7.81527C1.00023 7.20908 0.875753 6.55936 0.875753 5.90321C0.875753 4.57807 1.38276 3.30721 2.28525 2.37019C3.18773 1.43317 4.41177 0.906763 5.68807 0.906763C6.96438 0.906763 8.18841 1.43317 9.0909 2.37019C9.99338 3.30721 10.5004 4.57807 10.5004 5.90321Z" fill="black" fill-opacity="0.51"/>
+                    </svg>
+                </div>
+                <div class="col-8">            
+                    <input type="email" class="remove-border" id="email" placeholder="Describe your preference here ...">
+                </div>
+                <div class="col align-items-right">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 6.74777C0.632608 6.74777 0.759785 6.80246 0.853553 6.8998C0.947321 6.99714 1 7.12917 1 7.26683V8.30495C1 9.40625 1.42143 10.4624 2.17157 11.2412C2.92172 12.0199 3.93913 12.4574 5 12.4574C6.06087 12.4574 7.07828 12.0199 7.82843 11.2412C8.57857 10.4624 9 9.40625 9 8.30495V7.26683C9 7.12917 9.05268 6.99714 9.14645 6.8998C9.24021 6.80246 9.36739 6.74777 9.5 6.74777C9.63261 6.74777 9.75979 6.80246 9.85355 6.8998C9.94732 6.99714 10 7.12917 10 7.26683V8.30495C10 9.59172 9.53962 10.8326 8.70812 11.7869C7.87662 12.7412 6.73332 13.3409 5.5 13.4696V15.5718H8.5C8.63261 15.5718 8.75979 15.6264 8.85355 15.7238C8.94732 15.8211 9 15.9532 9 16.0908C9 16.2285 8.94732 16.3605 8.85355 16.4579C8.75979 16.5552 8.63261 16.6099 8.5 16.6099H1.5C1.36739 16.6099 1.24021 16.5552 1.14645 16.4579C1.05268 16.3605 1 16.2285 1 16.0908C1 15.9532 1.05268 15.8211 1.14645 15.7238C1.24021 15.6264 1.36739 15.5718 1.5 15.5718H4.5V13.4696C3.26668 13.3409 2.12338 12.7412 1.29188 11.7869C0.460384 10.8326 -1.55717e-05 9.59172 3.95006e-10 8.30495V7.26683C3.95006e-10 7.12917 0.0526785 6.99714 0.146447 6.8998C0.240215 6.80246 0.367392 6.74777 0.5 6.74777Z" fill="black" fill-opacity="0.5"/>
+                        <path d="M7 8.30493C7 8.85558 6.78929 9.38368 6.41421 9.77305C6.03914 10.1624 5.53043 10.3812 5 10.3812C4.46957 10.3812 3.96086 10.1624 3.58579 9.77305C3.21071 9.38368 3 8.85558 3 8.30493V3.11435C3 2.5637 3.21071 2.0356 3.58579 1.64623C3.96086 1.25686 4.46957 1.03812 5 1.03812C5.53043 1.03812 6.03914 1.25686 6.41421 1.64623C6.78929 2.0356 7 2.5637 7 3.11435V8.30493ZM5 0C4.20435 0 3.44129 0.328118 2.87868 0.912172C2.31607 1.49623 2 2.28837 2 3.11435V8.30493C2 9.13091 2.31607 9.92306 2.87868 10.5071C3.44129 11.0912 4.20435 11.4193 5 11.4193C5.79565 11.4193 6.55871 11.0912 7.12132 10.5071C7.68393 9.92306 8 9.13091 8 8.30493V3.11435C8 2.28837 7.68393 1.49623 7.12132 0.912172C6.55871 0.328118 5.79565 0 5 0Z" fill="black" fill-opacity="0.51"/>
+                    </svg>
+                </div>              
+            </div>
+            <div class="row justify-content-right">
+                <a class="btn btn-primary btn-lg" href="https://www.freecodecamp.com/email-submit" role="button" id="submit">Order Now</a>
+            </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-right">
+            <a class="btn btn-primary btn-lg" href="https://www.freecodecamp.com/email-submit" role="button" id="submit">Order Now</a>
+        </div>
+        
+    </div>
+    <!-- Features -->
+    <div class="container positionCenter mt-5 pt-5" id="features">
+        <!-- Features Text -->
+        <h2 class="display-2 fw-light text-center mb-2">
+            Features
+        </h2>
+        <!-- Muted Text -->
+        <p class="fs-5 text-muted text-center mb-5">Quickly build an effective pricing table for your potential
+            customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with
+            little customization.</p>
+        <!-- Cards -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 mb-5 mb-sm-5 mb-md-5 mb-lg-0 p-0 card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 mb-sm-5 mb-md-5 mb-lg-0 mx-lg-3 p-0 card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 mb-sm-5 mb-md-5 mb-lg-0 p-0 card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="container mt-5 pt-5" id="pricing">
+        <!-- Pricing Text -->
+        <h2 class="display-2 fw-light text-center mb-2">
+            Pricing
+        </h2>
+        <!-- Muted Text -->
+        <p class="fs-5 text-muted text-center mb-5">Quickly build an effective pricing table for your potential
+            customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with
+            little customization.</p>
+        <!-- Pricing Cards -->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compare Plans -->
+        <h4 class="display-6 text-center mb-4">Compare plans</h4>
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th style="width: 34%;"></th>
+                        <th style="width: 22%;">Free</th>
+                        <th style="width: 22%;">Pro</th>
+                        <th style="width: 22%;">Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Public</th>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Private</th>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Permissions</th>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Sharing</th>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Unlimited members</th>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Extra security</th>
+                        <td></td>
+                        <td></td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check"></use>
+                            </svg></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="container mt-5 pt-5" id="contactus">
+        <h2 class="display-2 fw-light text-center mb-2">
+            Contact Us
+        </h2>
+        <!-- Muted Text -->
+        <p class="fs-5 text-muted text-center">Quickly build an effective pricing table for your potential customers
+            with this Bootstrap example. It’s built with default Bootstrap components and utilities with little
+            customization.</p>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mt-5 mb-3">
+                <label for="formGroupExampleInput" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-6 mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2"
+                    placeholder="example@somewhere.com">
+            </div>
+        </div>
+        <div class="mb-5" id="btn">
+            <input class="btn btn-outline-primary" type="submit" value="Submit">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <span class="col-6 d-flex justify-content-start text-muted">Copyrighted © 2020</span>
+                <span class="col-6 d-flex justify-content-end">
+                    <a href="https://github.com/sshehrozali" alt="github-username/sshehrozali">Shehroz Ali</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
