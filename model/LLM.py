@@ -63,10 +63,11 @@ def get_ingredients(dish_details):
     return data
 
 if __name__ == '__main__':
-	# I_want = 'I prefer south indian and north indian food'
-	# values = get_dish_suggestion(I_want)
-	# print(values)
+	I_want = 'Make me menu for a romantic date. I would prefer Italian, french and north Indian'
+	values = get_dish_suggestion(I_want)
+	print(f'Showing results for {I_want}: ',values)
 
-    dish_detail = '{ "dish_name": "Butter Chicken", "serves": 3 }'
+    dish_detail = '{"dish_name": "Butter Chicken", "serves": 2 }'
     ingredients_values = get_ingredients(dish_detail)
-    print(ingredients_values)
+    dish_detail = json.loads(dish_detail)
+    print(f'Showing results for {dish_detail["dish_name"]}: ',ingredients_values)
