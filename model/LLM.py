@@ -63,9 +63,9 @@ def get_ingredients(dish_details):
     return data
 
 if __name__ == '__main__':
-	I_want = 'Make me menu for a romantic date. I would prefer Italian, french and north Indian'
-	values = get_dish_suggestion(I_want)
-	print(f'Showing results for {I_want}: ',values)
+    I_want = 'Make me menu for a romantic date. I would prefer Italian, french and north Indian'
+    values = get_dish_suggestion(I_want)
+    print(f'Showing results for {I_want}: ',values)
 
     dish_detail = '{"dish_name": "Butter Chicken", "serves": 2 }'
     ingredients_values = get_ingredients(dish_detail)

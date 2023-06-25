@@ -26,5 +26,13 @@ What's Out of Scope:
 MakeMyKart aims to simplify the process of grocery shopping by providing personalized dish recommendations and assisting users in creating well-organized shopping lists. By leveraging AI technologies, the app helps users make informed choices, save time, and enhance their overall cooking and shopping experiences.
 
 
+## How to test
+
+Fork and use codespace to check the code
+
+```
+cd model
+python LLM.py
+```
 
 
